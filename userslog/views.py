@@ -8,8 +8,9 @@ def authentication(request):
 			action = request.POST.get('action', None)
 			username = request.POST.get('username', None)
 			password = request.POST.get('password', None)
+			email = request.POST.get('email',None)
 			if action == 'signup':
-				user = User.objects.create_user(username=username, password=password)
+				user = User.objects.create_user(username=username, password=password, email=email)
 				user.save()
 			elif action == 'login':	
 			    user = authenticate(username=username, password=password)
