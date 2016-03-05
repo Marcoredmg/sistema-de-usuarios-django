@@ -3,6 +3,7 @@
 	<ul>
 		{% for vu in object_list %}
 			<li>{{ vu.name }} | Vuelo con destino a: {{ vu.destiny }} | tiempo estimado {{ vu.time }} precio: ${{ vu.price }} MXN</li>
+		
 		{% endfor %}
 	</ul>
 	{% endblock %}
