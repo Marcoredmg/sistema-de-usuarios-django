@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h2>Vuelos Disponibles</h2>
+	<h3>Bienvenido {{ user.username }} {{ vuelo.favorites }}</h3>
 	{% if user.is_staff %}
 	    <a href="admin/">Admin</a>
 	
